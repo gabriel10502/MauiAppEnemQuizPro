@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEnemQuizPro.MVVM.Views.NewUser"
+             Title="NewUser">
+    <VerticalStackLayout 
+        VerticalOptions="Center"
+        Spacing="10"
+        Padding="10">
+
+        <Label 
+            Text="Enem Quiz PRO"
+            HorizontalOptions="Center" />
+
+        <Label Text="Email:" />
+        <Entry x:Name="txt_email_cadastro" />
+
+        <Label Text="Senha:" />
+        <Entry x:Name="txt_senha_cadastro" IsPassword="True" />
+
+        <Label Text="Confirma Senha:" />
+        <Entry x:Name="txt_confirmasenha_cadastro" IsPassword="True" />
+
+        <Label Text="Nome:" />
+        <Entry x:Name="txt_nome_cadastro" />
+
+        <Button Text="Confirmar" Clicked="Button_Clicked"/>
+        <Button Text="Voltar" Clicked="Button_Clicked_1"/>
+
+    </VerticalStackLayout>
+</ContentPage>
